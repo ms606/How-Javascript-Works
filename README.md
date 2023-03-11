@@ -23,3 +23,30 @@ Adding properties to an object after instantiation will force a hidden class cha
 Code that executes the same method repeatedly will run faster than code that executes many different methods only once (due to inline caching).
     3. Managing /*arguments*/ key words, try to avoid using that.
     4. Call Stack: Call stack stores functions and variables as your code executes. There is a state stack, or called state frame, which lets us know where we are in the code. Runs like filo, first in & last out. & we use a memory heap to point different variables, object and data that we store so we know where to look.  
+    5. Call stack and memory heaps are two important location which js remembers. 
+
+Not everytime garbage collector works perfectly, so we can't just rely on that. 
+
+#Memory Leaks: the pcs of memory that the application has used in the past but not needed anymore but its has/won't be returned back to us to reuse as free memory. 
+
+Three common ways for memory leak:
+
+1. Global variable
+    var a = 1;
+    var b = 1;
+    var c = 1;
+
+2. Event listner
+    you create an event but then you don't remove it, and you keep on adding events on events eg
+    var element = document.getElementById('button')
+    element.addEventListner('click', onClick)
+
+3. Set Interval
+    If we don't clear or remove setInterval's callback functions, they will never be cleared by garbage collector and always be there creating memory leak.
+    setInterval(() => {
+        // referencing objects
+    })
+
+#Single threaded: Js stack is a single threaded, can only perform one calculations at a time meaning a synchronous. 
+To make it async it works with the browser enviornment and uses Web API, there is a callback queue and event loop. 
+
