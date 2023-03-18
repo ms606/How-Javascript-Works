@@ -52,3 +52,9 @@ To make it async it works with the browser enviornment and uses Web API, there i
 
 #hoisting: happening in global execution context, js code takes a pass through the complete file code and when it finds either var keyword or function it creates a func and that variable into global like var abc = undefined 
 so js page doesnt prompts any error just undefined. it goes into memory heap and asks to assign the value to it. 
+
+
+* WHEN TO USE FUNCTION EXPRESSION AND FUNC DECLARATION. 
+* Functional scope and block scope: 
+Js is a functional scope language. e.g if you use functional scoping var, variable declared you can access the variable from anywhere in the code but when using the const or let keyword you turn that into block scope and won’t be able to access from anywhere
+* its bad to write variables in global space. It pollutes the global environment and there is a change of overriding the variable names and values
