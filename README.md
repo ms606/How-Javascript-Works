@@ -57,4 +57,12 @@ so js page doesnt prompts any error just undefined. it goes into memory heap and
 * WHEN TO USE FUNCTION EXPRESSION AND FUNC DECLARATION. 
 * Functional scope and block scope: 
 Js is a functional scope language. e.g if you use functional scoping var, variable declared you can access the variable from anywhere in the code but when using the const or let keyword you turn that into block scope and won’t be able to access from anywhere
-* its bad to write variables in global space. It pollutes the global environment and there is a change of overriding the variable names and values
+* its bad to write variables in global space. It pollutes the global environment and there is a change of overriding the variable names and values.
+* Methods: they are the function inside of the object. 
+* This: this keyword, 
+    * Gives methods access to their data objects. 
+    * Execute same code for multiple objects.  
+* Function currying, refers to partially passing the parameters into the functions 
+* Functions and arrays are both type object in JavaScript. 
+* A value of a primitive type directly contains value of a primitive type there is no ambiguity eg var a = 5  
+* In a non primitive data type the value is store somewhere else in the data and the reference or pointer is stored somewhere else. 
