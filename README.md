@@ -69,11 +69,10 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 
 
 
-Section 4: Types in Javascript
-    1. Statically typed language: Declare the variables before using them.
+#Section 4: Types in Javascript
+    1. Statically typed language: Declare the variables before using them. (usually prevent bugs and usually helps in error handling)
             e.g. int a;
                  a = 100; 
-                 
-                   
-    2. Dynamically typed language: You can declare the variables without really specifying in that strictness / boundness. Here the type checking is done on the run time.
+                                    
+    2. Dynamically typed language: You can declare the variables without really specifying in that strictness / boundness. Here the type checking is done on the run time.    (allows to be more flexible and write the code faster)
             e.g. var a = 100; 
