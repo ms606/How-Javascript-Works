@@ -66,3 +66,14 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 * Functions and arrays are both type object in JavaScript. 
 * A value of a primitive type directly contains value of a primitive type there is no ambiguity eg var a = 5  
 * In a non primitive data type the value is store somewhere else in the data and the reference or pointer is stored somewhere else. 
+
+
+
+Section 4: Types in Javascript
+    1. Statically typed language: Declare the variables before using them.
+            e.g. int a;
+                 a = 100; 
+                 
+                   
+    2. Dynamically typed language: You can declare the variables without really specifying in that strictness / boundness. Here the type checking is done on the run time.
+            e.g. var a = 100; 
