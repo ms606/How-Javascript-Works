@@ -47,10 +47,10 @@ Three common ways for memory leak:
         // referencing objects
     })
 
-#Single threaded: Js stack is a single threaded, can only perform one calculations at a time meaning a synchronous. 
+# Single threaded: Js stack is a single threaded, can only perform one calculations at a time meaning a synchronous. 
 To make it async it works with the browser enviornment and uses Web API, there is a callback queue and event loop. 
 
-#hoisting: happening in global execution context, js code takes a pass through the complete file code and when it finds either var keyword or function it creates a func and that variable into global like var abc = undefined 
+# hoisting: happening in global execution context, js code takes a pass through the complete file code and when it finds either var keyword or function it creates a func and that variable into global like var abc = undefined 
 so js page doesnt prompts any error just undefined. it goes into memory heap and asks to assign the value to it. 
 
 
@@ -76,3 +76,15 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
                                     
     ` 2. Dynamically typed language: You can declare the variables without really specifying in that strictness / boundness. Here the type checking is done on the run time.    (allows to be more flexible and write the code faster)
             e.g. var a = 100; `
+            
+### Functions properties:
+1. Pass a function in to a variable. 
+    var stuff = function(){}
+2. Pass a function into a function. 
+    function a(fn) {
+        fn()
+    }
+3. Return a function from a function 
+    function b() {
+        return function c() {console.log('bye'))
+    }
