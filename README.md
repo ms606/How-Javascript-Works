@@ -78,13 +78,17 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
             e.g. var a = 100; `
             
 ### Functions properties:
-1. Pass a function in to a variable. 
+1. Assign a function to a variable. 
     var stuff = function(){}
-2. Pass a function into a function. 
+2. Pass a function into an arguments. 
     function a(fn) {
         fn()
     }
-3. Return a function from a function 
+3. Return a function as values from another function.
     function b() {
         return function c() {console.log('bye'))
     }
+    
+### HOF Higher Order Functions:
+    They are just functions that can take a function as an argument or returns another function. Higher order function usually returns another function that performs some task.
+    
