@@ -47,10 +47,10 @@ Three common ways for memory leak:
         // referencing objects
     })
 
-# Single threaded: Js stack is a single threaded, can only perform one calculations at a time meaning a synchronous. 
+##### Single threaded: Js stack is a single threaded, can only perform one calculations at a time meaning a synchronous. 
 To make it async it works with the browser enviornment and uses Web API, there is a callback queue and event loop. 
 
-# hoisting: happening in global execution context, js code takes a pass through the complete file code and when it finds either var keyword or function it creates a func and that variable into global like var abc = undefined 
+##### hoisting: happening in global execution context, js code takes a pass through the complete file code and when it finds either var keyword or function it creates a func and that variable into global like var abc = undefined 
 so js page doesnt prompts any error just undefined. it goes into memory heap and asks to assign the value to it. 
 
 
