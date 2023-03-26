@@ -1,15 +1,15 @@
 # How-Javascript-Works
 
-Section 2: 
-1. Javascript Engine:
+## Section 2: 
+#### 1. Javascript Engine:
     a. Parser 
     b. AST (Abstract syntax tree)
     c. Interpreter & Compilers: Int.. reads the code line by line, Com .. takes the complete code, understand it and create a new type of code in a different language. Usually creates a machine code. They both of pros and cons when compiling the code. 
    The engineers build something which combines both interpreter and compilier into  called JIT Complier (just in time) in V8 engine.
    d. Profiler, watches the code and sees what we can do to optimise it, sees what code runs how many times. 
-2. Bytecode: code interpreted by js engine to run. You can not run the byte code just itself you need an engine. 
-3. Javascript is not just an intepreted language, but alot of it depends on the implementation. 
-4. Optimising js code:
+#### 2. Bytecode: code interpreted by js engine to run. You can not run the byte code just itself you need an engine. 
+#### 3. Javascript is not just an intepreted language, but alot of it depends on the implementation. 
+#### 4. Optimising js code:
     1. HIDDEN CLASSES: Writing a predictable code for machines and humans both like it. Helps work faster. 
     2. INLINE CACHING: Simple terms inline caching relies upon the observation that repeated calls to the same method tend to occur on the same type of object.
 After two successful calls of the same method to the same hidden class, V8 omits the hidden class lookup and simply adds the offset of the property to the object pointer itself. 
