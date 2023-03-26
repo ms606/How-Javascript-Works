@@ -98,4 +98,7 @@ In JavaScript, every time a function is called, a new execution context is creat
 However, if a function creates a closure by referencing a variable from its outer lexical environment, that variable and its surrounding scope are not destroyed when the function completes execution. Instead, they are retained in memory as part of the closure.
 
 #### Prototypal inheritance: 
-Prototypal inheritance is a fundamental concept in JavaScript that allows objects to inherit properties and methods from other objects. In js how the array and the function has been created with some base fuctions, which we can view by calling the function.__proto__
+Prototypal inheritance is a fundamental concept in JavaScript that allows objects to inherit properties and methods from other objects. In js how the array and the function has been created with some base fuctions, which we can view by calling the function.__proto__.
+ In JavaScript, objects have an internal property called [[Prototype]] which points to another object from which the object inherits properties and methods. This object is known as the object's prototype.
+
+
