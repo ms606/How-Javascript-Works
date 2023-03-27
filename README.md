@@ -102,3 +102,4 @@ Prototypal inheritance is a fundamental concept in JavaScript that allows object
  In JavaScript, objects have an internal property called [[Prototype]] which points to another object from which the object inherits properties and methods. This object is known as the object's prototype.
 
 
+## Section 6: OOP (Object oriented programming)
