@@ -106,3 +106,6 @@ Prototypal inheritance is a fundamental concept in JavaScript that allows object
 Bringing together the data and its functionality into the single box called an object is the main focus in OOP,
 
 In FP: In FP, the data and behaviour is two differnet things and should be kept seperately
+
+#### Factory functions: 
+Functions that creates an objects for us. 
