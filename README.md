@@ -113,3 +113,9 @@ In FP: In FP, the data and behaviour is two differnet things and should be kept 
 
 #### Factory functions: 
 Functions that creates an objects for us. 
+
+### OOP3 Constructor Function: 
+ Anything called with new is called a contructor function. All the starting with capital letters like Function(), Object(), Number() are constructor functions. We innvoke them using NEW. *All construction function should start from a capital letter as a general rule*. They are the older ways to create replaced by Object.Create now a days. THe new keyword returns the object for the func.
+ 
+ Exactly what new keyword does: ?? 
+ 1. 
