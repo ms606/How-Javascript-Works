@@ -124,5 +124,7 @@ function Elf(name, weapon) {
   this.weapon = weapon; *
 }
  
+## Note: When in JS we assign the number to any variable (var a = 5), internal it creates a constructor function and saves it in an object like [Number 5]
+
  Exactly what new keyword does: ?? 
  1. 
