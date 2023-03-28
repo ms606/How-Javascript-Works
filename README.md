@@ -92,6 +92,10 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 ### HOF Higher Order Functions:
     They are just functions that can take a function as an argument or returns another function. Higher order function usually returns another function that performs some task.
     
+### Closures: 
+    Combination of functions and lexical enviornment from which it has declared. When a HOF function is created or when a function has inner more functions, js on the first phase creates a lexical scoping creates a closure box and saves all the variables and stuff that is refernced in the inner functions, so after executing functions one by one, the last function has all the values reference of the parent ones.
+    In js where we write the function matters not where we call/invoke. 
+    
 #### closure memory management:
 In JavaScript, every time a function is called, a new execution context is created, which includes a new variable environment. When the function completes execution, this variable environment is typically destroyed, and any variables defined within it are garbage collected by the browser.
 
