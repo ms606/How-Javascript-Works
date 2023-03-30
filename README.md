@@ -130,5 +130,31 @@ function Elf(name, weapon) {
 
 ### Explicit binding
 
+### Inheritance
+    This how we can extend the class Object in JS, add a constructor to a new class, call the parameters we want to use in the new class, and if you want something newly created into this new class, do the ```this.newVariable = newVariable``` so you can use that further. Eg. 
+````    
+    class Character {
+  constructor(name, weapon) {
+    this.name = name;
+    this.weapon = weapon;
+  }
+  attack() {
+    return 'atack with ' + this.weapon
+  }
+}
+
+class Elf extends Character { 
+  constructor(name, weapon, type) {
+    // console.log('what am i?', this); this gives an error
+    super(name, weapon) 
+    console.log('what am i?', this);
+    this.type = type;
+  }
+}
+````    
+    
+    
+    
+    
  Exactly what new keyword does: ?? 
  1. 
