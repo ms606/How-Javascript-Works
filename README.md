@@ -167,3 +167,6 @@ class Elf extends Character {
 Exactly what new keyword does: ?? 
 
  1. 
+
+
+## Section 7: Functional Programming
