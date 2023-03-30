@@ -156,5 +156,14 @@ class Elf extends Character {
     
     
     
- Exactly what new keyword does: ?? 
+ ## 4 pillars of oop: 
+1. Encapsulation 
+
+2. Abstraction: meaning hiding the complexity from the user. You insntantiate the class and poof you have a var with all the properties. 
+
+3. Inheritance: By inheriting from other classes we aboid writing same code again and again & save memory.
+ 
+
+Exactly what new keyword does: ?? 
+
  1. 
