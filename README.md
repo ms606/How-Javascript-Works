@@ -156,7 +156,7 @@ class Elf extends Character {
     
     
     
- ## 4 pillars of oop: 
+ ### 4 pillars of oop: 
 1. Encapsulation 
 
 2. Abstraction: meaning hiding the complexity from the user. You insntantiate the class and poof you have a var with all the properties. 
@@ -170,3 +170,27 @@ Exactly what new keyword does: ??
 
 
 ## Section 7: Functional Programming
+ Concept is there is a data and the interaction of data. Generally the focus of functional programming is simplicity by seperating the data and functions. 
+ * There is only one pillar of FP, **** Pure Functions ****
+ * All objects created in FP are immutable. 
+
+#### Pure Functions (No communication with outside world at all):
+1. No Side effects: they will not effect anything outside their function state, or mutate the global values/variables, only work with their own function. EG, koyi bahir array hai andar uski values ya index pey data hai woh update na hojaye. 
+2. Input ---> Output: Meaning however times we call it with a same input, the answer/ return will always be with the same output. E.G. function a(num1, num2) { 
+    return num1 + num2
+   }
+   It should have a refrential dependency/transparency ?. 
+```` Esence of function programming is to build a program with very small, useable, predictable pure functions. ````
+
+##### What to remember when programing in FP.
+1. Perform singlular Task
+2. Should have a return statement, always an input and output.
+3. Pure, quality mentioned above.
+4. No shared state with outer world or global values.
+5. Imutable state, always return the new state and not update anything of outer parameters.
+6. Composable.... ? 
+7. Predictable... self explainatory. 
+
+#### Idempotence
+Idempotence is any function that can be executed several times without changing the final result beyond its first iteration.
+EX Math.abs(Math.abs(-50))
