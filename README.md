@@ -194,3 +194,39 @@ Exactly what new keyword does: ??
 #### Idempotence
 Idempotence is any function that can be executed several times without changing the final result beyond its first iteration.
 EX Math.abs(Math.abs(-50))
+
+#### Imperative 
+
+#### Declarative 
+Always goes through something machine code or imperative process. 
+
+#### Immutability 
+
+#### Structural sharing
+
+### HOF
+Does one of two things it either One of more functions as an argument OR returns a function as a result (often calls as callback). 
+const hof = () => () => 5; 
+        OR
+const hof = (fn) => fn(5);
+hof(function a(x){return x});
+
+#### Closure 
+EG
+const closure = function(){
+ let count = 0;
+ return function increment() 
+  count++
+  return count;
+  }
+}
+    
+#### Currying 
+It is a function that takes multiple parameter one by one (it has closure kinda element in them)
+EG. 
+const curriedMultiply = (a) => (b) => a * b ; 
+curriedMultiply(5)(2); //10
+
+#### Memoization 
+
+#### Compose 
