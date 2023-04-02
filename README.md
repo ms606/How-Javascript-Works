@@ -107,7 +107,7 @@ Prototypal inheritance is a fundamental concept in JavaScript that allows object
 
 
 ## Section 6: OOP (Object oriented programming)
-Bringing together the data and its functionality into the single box called an object is the main focus in OOP,
+Bringing together the data and its functionality into the single box called an object is the main focus in OOP, orgranizing code into units is also called as OOP. A box containing information and operations that are suppose to refer to the same concept, these operation inside an object is called atributes or state.  
 
 In FP: In FP, the data and behaviour is two differnet things and should be kept seperately
 
@@ -229,4 +229,18 @@ curriedMultiply(5)(2); //10
 
 #### Memoization 
 
-#### Compose 
+#### Compose   
+
+#### Difference between FP and OOP
+1. FP is about performing many different operation when data is fixed.  
+   OOP performs few operation on common data. 
+   
+2. FP stateless, state is immuteable. 
+   OOP statefull, we are modifying state. 
+
+3. Pure functions, only update stuff inside the function, can run parellel programs altogethor as it wont update the global states. 
+   OOP, side effect, methods manilpulate inside state. 
+
+4. Declarative, its about what we are doing. Better in performing large data for our applications eg. machine learning, becuase you can run on multiple processors
+   Imperative, How about it we want to done. EG GAME 
+
