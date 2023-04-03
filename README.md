@@ -244,3 +244,11 @@ curriedMultiply(5)(2); //10
 4. Declarative, its about what we are doing. Better in performing large data for our applications eg. machine learning, becuase you can run on multiple processors
    Imperative, How about it we want to done. EG GAME 
 
+## Section 9: Asynchronous Javascript
+### Javascript Notes
+    * Promises: An object that may produce single value sometime in the future. Either its a resolved value or a reason that it's not resolved (rejected). 
+A promise can be in total three possible states, Fullfilled, Rejected or Pending. 
+    * Promises is the replacement of callback, it was messy and there were alot of nested callbacks for alot of scenarios. 
+    * Async await: A function that returns a promise. One benifit is that more easily readable. 
+    * Async uses "async" keyword before function and "await" keyword after an executed func.
+    
