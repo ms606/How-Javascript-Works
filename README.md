@@ -251,4 +251,6 @@ A promise can be in total three possible states, Fullfilled, Rejected or Pending
     * Promises is the replacement of callback, it was messy and there were alot of nested callbacks for alot of scenarios. 
     * Async await: A function that returns a promise. One benifit is that more easily readable. 
     * Async uses "async" keyword before function and "await" keyword after an executed func.
+    * In javascript runtime we have three two different queues *1. Callback Queue - Task Queue (
+    2. Job Queue - Microtask Queue (It has more priority than the callback queue). * 
     
