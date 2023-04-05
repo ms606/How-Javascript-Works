@@ -253,4 +253,16 @@ A promise can be in total three possible states, Fullfilled, Rejected or Pending
     * Async uses "async" keyword before function and "await" keyword after an executed func.
     * In javascript runtime we have three two different queues *1. Callback Queue - Task Queue (
     2. Job Queue - Microtask Queue (It has more priority than the callback queue). * 
-    
+
+## Section 10: Modules In Javacript
+    1. There is module scope which lies between global scope and function scope. 
+    2. We can combine multiple function scope in Module Scope but still not pollute the global scope
+    3. Module Pattern code eg
+        var anyName // anyName is a global variable
+              = (function(){ 
+          .... // the code we need to write
+          }
+          return {
+           .... // public return api, this will be accessible on public scope
+          }
+        }) ( ... Pass here the dependencies )
