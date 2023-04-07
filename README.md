@@ -268,3 +268,5 @@ A promise can be in total three possible states, Fullfilled, Rejected or Pending
         }) ( ... Pass here the dependencies )
     4. AMD Moduler helps loading the js async, which other moduler like common js etc doesnt
 
+## Section 15: Intermediate Javascript
+#### Chaining Operator: 
