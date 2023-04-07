@@ -270,3 +270,5 @@ A promise can be in total three possible states, Fullfilled, Rejected or Pending
 
 ## Section 15: Intermediate Javascript
 #### Chaining Operator: 
+
+#### Nullish coalesing operator
