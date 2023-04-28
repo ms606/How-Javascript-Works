@@ -188,8 +188,18 @@ Exactly what new keyword does: ??
 3. Pure, quality mentioned above.
 4. No shared state with outer world or global values.
 5. Imutable state, always return the new state and not update anything of outer parameters.
-6. Composable.... ? 
+6. Composable. 
 7. Predictable... self explainatory. 
+
+##### Composable: meaning the ability to combine small, reusable function into one larger complex function. These can be combined into different complex ways.
+JS, is a fp emphasizes to use a higher order functions, which are func that can take other func as an arg or return func as a values. 
+```` EG
+ const double = x => x * 2; 
+ const add = y => x => x + y; 
+ 
+ const doubleAndAdd = add(5)(double(3));
+ console.log(doubleAndAdd);
+````
 
 #### Idempotence
 Idempotence is any function that can be executed several times without changing the final result beyond its first iteration.
