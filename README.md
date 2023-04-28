@@ -191,7 +191,8 @@ Exactly what new keyword does: ??
 6. Composable. 
 7. Predictable... self explainatory. 
 
-##### Composable: meaning the ability to combine small, reusable function into one larger complex function. These can be combined into different complex ways.
+##### 6. Composable: 
+ Meaning the ability to combine small, reusable function into one larger complex function. These can be combined into different complex ways.
 JS, is a fp emphasizes to use a higher order functions, which are func that can take other func as an arg or return func as a values. 
 ```` EG
  const double = x => x * 2; 
