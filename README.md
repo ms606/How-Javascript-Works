@@ -109,7 +109,7 @@ Prototypal inheritance is a fundamental concept in JavaScript that allows object
 ## Section 6: OOP (Object oriented programming)
 Bringing together the data and its functionality into the single box called an object is the main focus in OOP, orgranizing code into units is also called as OOP. A box containing information and operations that are suppose to refer to the same concept, these operation inside an object is called atributes or state.  
 
-In FP: In FP, the data and behaviour is two differnet things and should be kept seperately
+In FP: The data and behaviour is two differnet things and should be kept seperately
 
 #### Factory functions: 
 Functions that creates an objects for us. 
