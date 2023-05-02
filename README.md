@@ -208,10 +208,15 @@ Idempotence is any function that can be executed several times without changing 
 EX Math.abs(Math.abs(-50))
 
 #### Imperative 
-
+    A code that tells the machine what to do & how to do it. The kind where computer likes it. 
+    ``` EX for (i=1; i < 99; i++) {
+    console.log(i)
+    }
+    
 #### Declarative 
-Always goes through something machine code or imperative process. 
-
+    A code that tells what to do and what should happen, doesn't tells how to do it. The kind how human operates. Always goes through something machine code or imperative process. 
+    ``` EX [1,2,3].forEach( item => console.log(item) ) 
+    
 #### Immutability 
 
 #### Structural sharing
