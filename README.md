@@ -114,12 +114,14 @@ In FP: The data and behaviour is two differnet things and should be kept seperat
 ### OOP1: 
 How do we start, first we create a simple json object and give it some of the objects properties, may be add some functions in it.  
 Example: 
+```javascript
     const elf = {
         name: 'Orwell',
         weapon: 'bow',
         attack() {
             return 'attack with' + elf.weapon
     }
+```    
 
 #### Factory functions: 
 Functions that creates an objects for us. 
