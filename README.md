@@ -121,7 +121,33 @@ Example:
         attack() {
             return 'attack with' + elf.weapon
     }
+   
+    const elf2 = {
+        name: 'Canoppy',
+        weapon: 'bow',
+        attack() {
+            return 'attack with' + elf.weapon
+    }
+    
+    elf.attack();
+    elf2.attack();
 ```    
+but now if we want to create another elf we will have to redo the whole objects, so instead of that we will perform encapsulation. The state, data inside the object and then we group the functions/method seperately.
+So, here comes the factory functions (*Functions that creates an object for us*.)
+
+```javascript
+    function createElf(name, weapon) {
+     return {
+        name: name,
+        weapon: weapon,
+        attack() {
+            return 'attack with ' + weapon
+    }
+    
+    const peter = createElf('peter','stones');
+    petter.attack();
+```
+
 
 #### Factory functions: 
 Functions that creates an objects for us. 
