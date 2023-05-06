@@ -147,10 +147,31 @@ So, here comes the factory functions (*Functions that creates an object for us*.
     const peter = createElf('peter','stones');
     petter.attack();
 ```
+Or we can use the Object.create() 
+
+```javascript 
+    const elfFunction = {
+     attack() {
+      return 'attack with ' + this.weapon 
+     }
+    }
+    
+    function createElf(name, weapon){
+      let newElf = Object.create(elfFunctions)
+      newElf.name = name;
+      newElf.weapon = weapon;
+      return newElf;
+    } 
+    
+    const peter = createElf('peter','stones');
+    petter.attack();
+```
 
 
 #### Factory functions: 
 Functions that creates an objects for us. 
+
+### OOP2: 
 
 ### OOP3 Constructor Function: 
  Anything called with new is called a contructor function. All the starting with capital letters like Function(), Object(), Number() are constructor functions. We innvoke them using NEW. *All construction function should start from a capital letter as a general rule*. They are the older ways to create replaced by Object.Create now a days. THe new keyword returns the object for the func.
