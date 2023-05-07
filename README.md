@@ -192,7 +192,7 @@ function Elf(name, weapon) {
 
 ### Inheritance
     This how we can extend the class Object in JS, add a constructor to a new class, call the parameters we want to use in the new class, and if you want something newly created into this new class, do the ```this.newVariable = newVariable``` so you can use that further. Eg. 
-````    
+```javascript    
     class Character {
   constructor(name, weapon) {
     this.name = name;
@@ -211,7 +211,7 @@ class Elf extends Character {
     this.type = type;
   }
 }
-````    
+```javascript    
     
     
     
