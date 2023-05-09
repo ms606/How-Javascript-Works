@@ -76,7 +76,9 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
                                     
     ` 2. Dynamically typed language: You can declare the variables without really specifying in that strictness / boundness. Here the type checking is done on the run time.    (allows to be more flexible and write the code faster)
             e.g. var a = 100; `
-            
+
+## Section 5: The 2 Pillars: Closure and Prototypal Inheritance
+
 ### Functions properties:
 1. Assign a function to a variable. 
     var stuff = function(){}
@@ -95,6 +97,12 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 ### Closures: 
     Combination of functions and lexical enviornment from which it has declared. When a HOF function is created or when a function has inner more functions, js on the first phase creates a lexical scoping creates a closure box and saves all the variables and stuff that is refernced in the inner functions, so after executing functions one by one, the last function has all the values reference of the parent ones.
     In js where we write the function matters not where we call/invoke. 
+    
+``` Javascript
+    const boo = (string) => (name) => (name2) => console.log(`${string} ${name} ${name2}`);
+    
+    boo('hi')('tim')('becca');
+```
     
 #### closure memory management:
 In JavaScript, every time a function is called, a new execution context is created, which includes a new variable environment. When the function completes execution, this variable environment is typically destroyed, and any variables defined within it are garbage collected by the browser.
