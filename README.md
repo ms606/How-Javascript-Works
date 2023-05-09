@@ -103,7 +103,19 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
     
     boo('hi')('tim')('becca');
 ```
+
+**In closusres the parameters are treated as a local variables** example below 
+``` Javascript
+    const boo = (string) => (name) => (name2) => console.log(`${string} ${name} ${name2}`);
     
+    const booString = boo('hi');
+    // waiting 5 years, & js engine is running 
+    const booStringName = booString();
+    // we will still have the `hi` parameters
+    
+```
+
+
 #### closure memory management:
 In JavaScript, every time a function is called, a new execution context is created, which includes a new variable environment. When the function completes execution, this variable environment is typically destroyed, and any variables defined within it are garbage collected by the browser.
 
