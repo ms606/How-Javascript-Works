@@ -68,7 +68,7 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 * A value of a primitive type directly contains value of a primitive type there is no ambiguity eg var a = 5  
 * In a non primitive data type the value is store somewhere else in the data and the reference or pointer is stored somewhere else. 
 
-
+## section 3:
 
 ## Section 4: Types in Javascript
     ` 1. Statically typed language: Declare the variables before using them. (usually prevent bugs and usually helps in error handling)
