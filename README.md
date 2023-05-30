@@ -1,3 +1,6 @@
+
+
+
 # How-Javascript-Works
 ## Section 1: 
 
