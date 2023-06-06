@@ -4,6 +4,8 @@
 # How-Javascript-Works
 ## Section 1: 
 
+
+
 ## Section 2: 
 #### 1. Javascript Engine:
     a. Parser 
