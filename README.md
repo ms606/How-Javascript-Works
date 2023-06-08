@@ -212,7 +212,7 @@ function Elf(name, weapon) {
 ``` Note: When in JS we assign the number to any variable (var a = 5), internal it creates a constructor function and saves it in an object like [Number 5]. In JS everything besides null and undefined is an object and has a constructor function ```
 
 ### Implicit binidng: 
-
+Implicit Binding is applied when you invoke a function in an Object using the dot notation. this in such scenarios will point to the object using which the function was invoked. Or simply the object on the left side of the dot.
 
 ### Explicit binding
 
