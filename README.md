@@ -138,6 +138,9 @@ However, if a function creates a closure by referencing a variable from its oute
 Prototypal inheritance is a fundamental concept in JavaScript that allows objects to inherit properties and methods from other objects. In js how the array and the function has been created with some base fuctions, which we can view by calling the function.__proto__.
  In JavaScript, objects have an internal property called [[Prototype]] which points to another object from which the object inherits properties and methods. This object is known as the object's prototype.
 
+```javascript
+    
+```
 
 ## Section 6: OOP (Object oriented programming)
 Bringing together the data and its functionality into the single box called an object is the main focus in OOP, orgranizing code into units is also called as OOP. A box containing information and operations that are suppose to refer to the same concept, these operation inside an object is called atributes or state.  
