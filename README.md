@@ -142,6 +142,10 @@ Prototypal inheritance is a fundamental concept in JavaScript that allows object
     
 ```
 
+##### Prototypal Inheritance:
+We have an array, called arr, if we want to check its prototype we can do arr.__proto__, it will show the list of values/functions in an array, which is equal to Array.prototype, these both will have the same result if you see in log of inspect element. Now, if we do arr.__proto___.___proto___ it will show the object which is equal to Object.prototype , if we now do arr.__proto__.__proto__.__proto__ you will get "null", this is call protoype chaining. 
+So as we have saying that everything in the javascript is an object, it maybe coming from this only. 
+
 ## Section 6: OOP (Object oriented programming)
 Bringing together the data and its functionality into the single box called an object is the main focus in OOP, orgranizing code into units is also called as OOP. A box containing information and operations that are suppose to refer to the same concept, these operation inside an object is called atributes or state.  
 
