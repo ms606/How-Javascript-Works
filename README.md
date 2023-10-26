@@ -363,12 +363,49 @@ curriedMultiply(5)(2); //10
 ## Section 9: Asynchronous Javascript
 ### Javascript Notes
     * Promises: An object that may produce single value sometime in the future. Either its a resolved value or a reason that it's not resolved (rejected). 
-A promise can be in total three possible states, Fullfilled, Rejected or Pending. 
+      A promise can be in total three possible states, Fullfilled, Rejected or Pending. 
     * Promises is the replacement of callback, it was messy and there were alot of nested callbacks for alot of scenarios. 
     * Async await: A function that returns a promise. One benifit is that more easily readable. 
     * Async uses "async" keyword before function and "await" keyword after an executed func.
     * In javascript runtime we have three two different queues *1. Callback Queue - Task Queue (
     2. Job Queue - Microtask Queue (It has more priority than the callback queue). * 
+
+
+    Promises sample code 
+    ```Javascript
+          const myPromise = new Promise((resolve, reject) => {
+    const success = fetch(
+      "http://103.164.49.101:2626/api/salesProductProcessedBoxes/5"
+    )
+      .then((response) => {
+        if (response.ok) {
+          // console.log(response.text())
+          return response.text();
+        } else {
+          throw new Error("Error in api: no data found");
+        }
+      })
+      .then((result) => {
+        //console.log(result, 'inside result');
+        resolve(result);
+      })
+      .catch((error) => {
+        // console.log(error,'error inside catch')
+        reject(error);
+      });
+    console.log(success, "success");
+  });
+
+  myPromise
+    .then((result) => {
+      console.log(result, "inside result");
+    })
+    .catch((reject) => {
+      console.log(reject, "inside reject");
+    });
+    
+
+    ```
 
 ## Section 10: Modules In Javacript
     1. There is module scope which lies between global scope and function scope. 
