@@ -373,7 +373,7 @@ curriedMultiply(5)(2); //10
 
     Promises sample code 
    
-    ```Javascript
+    ```javascript
           const myPromise = new Promise((resolve, reject) => {
     const success = fetch(
       "http://103.164.49.101:2626/api/salesProductProcessedBoxes/5"
@@ -404,7 +404,7 @@ curriedMultiply(5)(2); //10
     .catch((reject) => {
       console.log(reject, "inside reject");
     });
-    ```
+```
 
 ## Section 10: Modules In Javacript
     1. There is module scope which lies between global scope and function scope. 
