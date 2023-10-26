@@ -372,6 +372,7 @@ curriedMultiply(5)(2); //10
 
 
     Promises sample code 
+   
     ```Javascript
           const myPromise = new Promise((resolve, reject) => {
     const success = fetch(
@@ -403,8 +404,6 @@ curriedMultiply(5)(2); //10
     .catch((reject) => {
       console.log(reject, "inside reject");
     });
-    
-
     ```
 
 ## Section 10: Modules In Javacript
