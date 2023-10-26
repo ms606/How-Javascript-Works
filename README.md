@@ -368,7 +368,7 @@ curriedMultiply(5)(2); //10
     * Async await: A function that returns a promise. One benifit is that more easily readable. 
     * Async uses "async" keyword before function and "await" keyword after an executed func.
     * In javascript runtime we have three two different queues *1. Callback Queue - Task Queue (
-    2. Job Queue - Microtask Queue (It has more priority than the callback queue). * 
+    2. Job Queue - Microtask Queue (It has more priority than the callback queue). 
 
 
     Promises sample code 
