@@ -141,6 +141,41 @@ However, if a function creates a closure by referencing a variable from its oute
  4. Asynchronous programming
  5. Event handling
 
+ 1. Encapsualtion EX Code
+
+```javascript
+function createCounter() {
+    let count = 0; // This variable will be captured by the closure.
+
+    // This is a closure that captures the 'count' variable.
+    function increment() {
+        count++;
+        console.log(count);
+    }
+
+    return increment;
+}
+
+const counter = createCounter(); // Create a closure
+counter(); // Logs 1
+counter(); // Logs 2
+
+// At this point, the 'createCounter' function has finished executing,
+// but the 'count' variable is still accessible via the 'counter' closure.
+
+// Garbage collection is not performed because 'count' is still in use.
+
+// Suppose you no longer need the counter:
+counter = null;
+
+// Now, 'counter' no longer references the closure.
+
+// If there are no other references to the closure, it can be garbage collected.
+
+// The closure still holds a reference to 'count', preventing it from being garbage collected.
+
+```
+
 
 #### Prototypal inheritance: 
 Prototypal inheritance is a fundamental concept in JavaScript that allows objects to inherit properties and methods from other objects. In js how the array and the function has been created with some base fuctions, which we can view by calling the function.__proto__.
