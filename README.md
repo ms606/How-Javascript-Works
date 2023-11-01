@@ -82,7 +82,7 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 ## section 3:
 #### 1. Execution context
  Whenever js engine scans a script, it makes an enviornment call Execution Context that handles entire transformation and execution of the code. 
-
+ There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
 
 ## Section 4: Types in Javascript
     ` 1. Statically typed language: Declare the variables before using them. (usually prevent bugs and usually helps in error handling)
