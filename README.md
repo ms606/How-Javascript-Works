@@ -394,6 +394,33 @@ curriedMultiply(5)(2); //10
 
 #### Memoization 
 
+``` javascript
+  const memoizeAdd = () => {
+    let cache: any = []
+    return (n: any) => {
+      console.log(cache, 'cache check' , n);
+
+      if (n in cache) {
+        console.log("fetching data");
+        return cache[n];
+      } else {
+        console.log("calculating result");
+        let result = n + 50;
+        cache[n] = result;
+        return result;
+      }
+    };
+  };
+
+  const newAdd = memoizeAdd();
+  console.log(newAdd(4));
+  console.log(newAdd(44));
+  console.log(newAdd(44333));
+  console.log(newAdd(1));
+  console.log(newAdd(4));
+
+```
+
 #### Compose   
 
 #### Difference between FP and OOP
