@@ -387,13 +387,17 @@ const closure = function(){
 }
     
 #### Currying 
-It is a function that takes multiple parameter one by one (it has closure kinda element in them)
+It is a function that takes multiple parameters one by one (it has closure kinda element in them)
 EG. 
 const curriedMultiply = (a) => (b) => a * b ; 
 curriedMultiply(5)(2); //10
 
 #### Memoization 
+Sometimes, function calls can be an expensive task as they involve high processing and performing it many times. But there is a way we can optimize that and it is called caching.
+For example, let's say we have to perform the factorial of number 50. We build a function in Js that does it and gives the answer, perfect. Now lets say we have then to perform the factorial of 51. Boom, the computer runs the function again and gets the factorial of 51. Now, imagine if we can save the value of earlier factorial of 50, and get that value in between the factorial of 51. We can get the factorial result in a very less time. 
 
+
+#### Here's what a simple memoized function look like. 
 ``` javascript
   const memoizeAdd = () => {
     let cache: any = []
