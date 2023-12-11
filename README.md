@@ -95,11 +95,27 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 * A value of a primitive type directly contains value of a primitive type there is no ambiguity eg var a = 5  
 * In a non primitive data type the value is store somewhere else in the data and the reference or pointer is stored somewhere else. 
 
-## section 3:
-#### 1. Execution context
- Whenever js engine scans a script, it makes an enviornment call Execution Context that handles entire transformation and execution of the code. 
+## Section 3:
+###### 1. Execution context
+ Whenever js engine scans a script, it makes an environment call Execution Context that handles the entire transformation and execution of the code. 
  There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
 
+###### 2. Global Context 
+  In js global context refers to the outermost context in execution stack. 
+  ``` javascript
+    var outerVariable = 'I am in the outer scope';
+    
+    function outerFunction() {
+      var innerVariable = 'I am in the inner scope';
+      console.log(innerVariable);
+      console.log(outerVariable); // Accessible because of the scope chain
+    }
+    
+    outerFunction();
+
+  ```
+
+ 
 ## Section 4: Types in Javascript
     ` 1. Statically typed language: Declare the variables before using them. (usually prevent bugs and usually helps in error handling)
             e.g. int a;
@@ -546,3 +562,12 @@ Now converting that into a recursive function
 #### Chaining Operator: 
 
 #### Nullish coalesing operator
+
+
+
+---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- =======
+
+#### Anti-Patters
+Examples of anti-patters in JavaScript are the following:
+1. Polluting the global namespaces by defining large numbers of variables in a global context.
+
