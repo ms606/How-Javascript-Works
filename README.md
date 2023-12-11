@@ -7,6 +7,21 @@ Basic knowledge:
 ###### 1. About Javascript V8 engine
 The V8 engine is an open-source high-performance JavaScript engine, written in C++ and used in the Chrome browser, and powers Node JS. In the V8 engine, the interpreter outputs bytecode. It is used in Chrome and Node.js, among others. It implements ECMAScript and WebAssembly and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. 
 
+###### 2. Parser
+Parsing is the process of analyzing the source code, checking it for errors, and breaking it up into parts.
+When JavaScript parses code, it does two things:
+
+It breaks down the code into tokens, which are the smallest units of the code (like a single word in a sentence).
+It organizes these tokens into a structure that shows the relationships between them. This is known as an Abstract Syntax Tree (AST). Think of it as a family tree that defines how each part of the code relates to the others.
+
+``` javascript
+function sum(a, b) {
+  return a + b;
+}
+```
+In the first step, the parser would break this down into tokens such as function, sum, (, a, ,, b, ), {, return, a, +, b, ;, and }.
+
+In the second step, it would create an AST. At the top of the tree would be the function keyword, with branches leading to sum, a, b, and the body of the function. In the function body, another branch would lead to the return keyword, which would have its own branches to a, +, and b.
 
 
 ## Section 2: 
