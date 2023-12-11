@@ -556,7 +556,7 @@ Now converting that into a recursive function
     .catch((reject) => {
       console.log(reject, "inside reject");
     });
-```
+
 
 ## Section 10: Modules In Javacript
     1. There is module scope which lies between global scope and function scope. 
