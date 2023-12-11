@@ -25,7 +25,7 @@ In the first step, the parser would break this down into tokens such as ```funct
 
 In the second step, it would create an AST. At the top of the tree would be the function keyword, with branches leading to sum, a, b, and the body of the function. In the function body, another branch would lead to the return keyword, which would have its own branches to a, +, and b.
 
-Visual Representation can be best found here <a href=https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf> Parser </a>
+More detailed Visual Representation can be found here <a href=https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf> JavaScript Visualized: the JavaScript Engine </a>
 
 
 ## Section 2: 
