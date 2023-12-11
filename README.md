@@ -5,8 +5,7 @@
 ## Section 1: 
 Basic knowledge: 
 ###### 1. About Javascript V8 engine
-    The V8 engine is an open source high-performance JavaScript engine, written in C++ and used in the Chrome browser and powers Node JS.
-    In the V8 engine, the interpreter outputs bytecode.
+The V8 engine is an open-source high-performance JavaScript engine, written in C++ and used in the Chrome browser, and powers Node JS. In the V8 engine, the interpreter outputs bytecode. It is used in Chrome and Node.js, among others. It implements ECMAScript and WebAssembly and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. 
 
 
 
