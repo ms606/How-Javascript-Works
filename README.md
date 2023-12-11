@@ -579,7 +579,8 @@ Now converting that into a recursive function
 
 
 
----- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- ======= ---- **** ---- =======
+<div style="page-break-after: always;"></div> 
+
 
 #### Anti-Patters
 Examples of anti-patters in JavaScript are the following:
