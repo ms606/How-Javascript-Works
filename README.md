@@ -4,18 +4,11 @@
 # How-Javascript-Works
 ## Section 1: 
 Basic knowledge: 
-Javascripts engine
-v8 engine
+### 1. Javascript engine
+#### V8 engine: 
+    The V8 engine is an open source high-performance JavaScript engine, written in C++ and used in the Chrome browser and powers Node JS.
 
 
-
-1.1 introduction:
-
-1.2 
-
-1.3
-
-1.4
 
 ## Section 2: 
 #### 1. Javascript Engine:
