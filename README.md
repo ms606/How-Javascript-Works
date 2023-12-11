@@ -27,6 +27,20 @@ In the second step, it would create an AST. At the top of the tree would be the 
 
 More detailed Visual Representation can be found here <a href=https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf> JavaScript Visualized: the JavaScript Engine </a>
 
+###### 3. eval() 
+ A function in js that evaluates a string of JavaScript code in the context of the current execution scope. It takes the valid javascript arguments as an expression, statements, and strings of js statements and executes the code dynamically. 
+
+``` javascript
+  function greet(name) {
+    console.log('Hello, ' + name + '!');
+  }
+  
+  let functionName = 'greet';
+  let userName = 'Alice';
+  
+  eval(functionName + '("' + userName + '")'); // Outputs: Hello, Alice!
+
+``` 
 
 ## Section 2: 
 #### 1. Javascript Engine:
@@ -511,7 +525,7 @@ Now converting that into a recursive function
 
     Promises sample code 
    
-    ```javascript
+    ``` javascript
           const myPromise = new Promise((resolve, reject) => {
     const success = fetch(
       "http://103.164.49.101:2626/api/salesProductProcessedBoxes/5"
@@ -570,4 +584,7 @@ Now converting that into a recursive function
 #### Anti-Patters
 Examples of anti-patters in JavaScript are the following:
 1. Polluting the global namespaces by defining large numbers of variables in a global context.
-
+2. Passing strings rather than functions to either setTimeout or setInterval as this triggers the use of eval() internally.
+3. Modifying the Object class prototype.
+4. Using JavaScript in an inline form as this is inflexible.
+5. The use of document.write where native DOM alternatives such as document.createElement are more appropriate. 
