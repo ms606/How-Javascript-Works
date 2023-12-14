@@ -615,5 +615,5 @@ to get additional information about what the program is doing.
    - There are two ways to propagate an error in JavaScript and TypeScript:
    1. Throw an exception. It terminates the process if not handled. It should be used when the intention is to stop an application when something goes wrong.
    2. Return an error. It denotes an expected error case scenario and does not require an application termination.
-     
-   
+
+##### Exception Handling
