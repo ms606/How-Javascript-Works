@@ -5,8 +5,11 @@ Section 2 --------------------------------- About Javascript Engine <br />
 Section 3 --------------------------------- Context <br />
 Section 4 --------------------------------- Types <br />
 Section 5 --------------------------------- The 2 Pillars: Closure and Prototypal Inheritance <br />
-Section 6 --------------------------------- <br />
+Section 6 --------------------------------- Upcoming <br />
+Section 7 --------------------------------- Upcoming <br />
+Section 8 --------------------------------- Upcoming <br />
 Section 9 --------------------------------- Asynchronous Javascript <br />
+Section 10 -------------------------------- Bugs & Error handling <br />
 
 
 
@@ -597,4 +600,20 @@ Examples of anti-patters in JavaScript are the following:
 2. Passing strings rather than functions to either setTimeout or setInterval as this triggers the use of eval() internally.
 3. Modifying the Object class prototype.
 4. Using JavaScript in an inline form as this is inflexible.
-5. The use of document.write where native DOM alternatives such as document.createElement are more appropriate. 
+5. The use of document.write where native DOM alternatives such as document.createElement are more appropriate.
+
+#### Section 10: Bugs & Error Handling  
+1. Strict mode
+   Adding  "use strict" at the top of a function or a js file, makes sure to check the types, it will not declare any global variables if you forget to create your self.
+2. Debugging
+   We know that our program is malfunctioning, and we want to find out why. This is where you must resist the urge to start making random changes to the code.     Instead, think. Analyze what is happening and come up with a theory of why it might be happening. Then, make additional observations to test this theory—or, if you don’t yet have a theory, make additional observations that might help you come up with one. Putting a few strategic console.log calls into the program is a good way
+to get additional information about what the program is doing.
+3. Error Propagation
+   Understanding the difference between throwing an exception and an error. Exceptions are not errors, exceptions are anomalous or exceptional conditions that require special processing. There are two types of such conditions: *operational* and *non-operational*.
+   * The input validation errors are operational errors. A failed login attempt is an *operational* situation. This is expected and can be handled.
+   * Non-operational condition is when an application cannot automatically resolve and error and then it should be ended. EX. An App should store data in a DB as some of the functionality has been lost which is supposed to be critical and is in non *operational state*. So, the app has to be terminated and the restarted.
+   - There are two ways to propagate an error in JavaScript and TypeScript:
+   1. Throw an exception. It terminates the process if not handled. It should be used when the intention is to stop an application when something goes wrong.
+   2. Return an error. It denotes an expected error case scenario and does not require an application termination.
+     
+   
