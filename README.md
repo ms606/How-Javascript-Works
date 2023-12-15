@@ -617,3 +617,17 @@ to get additional information about what the program is doing.
    2. Return an error. It denotes an expected error case scenario and does not require an application termination.
 
 ##### Exception Handling
+
+
+###### Some considerations where to use try-catch blocks.
+1. Critical Operations: Use a try-catch block for code where it calls API, database queries, or any operations that depend on external resources. This helps prevent unhandled errors from crashing your applications.
+```javascript
+  async function fetchData(){
+  try {
+   const response = await fetch('https://api.example.com/data');
+   const data = await response.json();
+  } catch(error){
+   console.log(error,'Error fetching data');
+   // Show more friendly data
+  }
+``` 
