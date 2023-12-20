@@ -331,7 +331,7 @@ function Elf(name, weapon) {
 ### Implicit binidng: 
 Implicit Binding is applied when you invoke a function in an Object using the dot notation. this in such scenarios will point to the object using which the function was invoked. Or simply the object on the left side of the dot.
 
-### Explicit binding
+### Explicit binding:
 
 ### Inheritance
     This how we can extend the class Object in JS, add a constructor to a new class, call the parameters we want to use in the new class, and if you want something newly created into this new class, do the ```this.newVariable = newVariable``` so you can use that further. Eg. 
