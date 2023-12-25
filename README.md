@@ -5,7 +5,7 @@ Section 2 --------------------------------- About Javascript Engine <br />
 Section 3 --------------------------------- Context <br />
 Section 4 --------------------------------- Types <br />
 Section 5 --------------------------------- The 2 Pillars: Closure and Prototypal Inheritance <br />
-Section 6 --------------------------------- Upcoming <br />
+Section 6 --------------------------------- Object Oriented Programming <br />
 Section 7 --------------------------------- Upcoming <br />
 Section 8 --------------------------------- Upcoming <br />
 Section 9 --------------------------------- Asynchronous Javascript <br />
