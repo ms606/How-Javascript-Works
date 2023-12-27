@@ -110,7 +110,15 @@ so js page doesnt prompts any error just undefined. it goes into memory heap and
 * Functional scope and block scope: 
 Js is a functional scope language. e.g if you use functional scoping var, variable declared you can access the variable from anywhere in the code but when using the const or let keyword you turn that into block scope and won’t be able to access from anywhere
 * its bad to write variables in global space. It pollutes the global environment and there is a change of overriding the variable names and values.
-* Methods: they are the function inside of the object. 
+* Methods: they are the function inside of the object.
+  This is a simple method:
+```javascript
+    var rabbit = {};
+    rabbit.speak = function(line) {
+      console.log("The rabbit says" + line + );
+    }
+    rabbit.speak("I am alive.");
+``` 
 * This: this keyword, 
     * Gives methods access to their data objects. 
     * Execute same code for multiple objects.  
