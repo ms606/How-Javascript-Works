@@ -49,7 +49,6 @@ More detailed Visual Representation can be found here <a href=https://dev.to/lyd
   let userName = 'Alice';
   
   eval(functionName + '("' + userName + '")'); // Outputs: Hello, Alice!
-
 ``` 
 
 ## Section 2: 
