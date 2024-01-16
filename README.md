@@ -582,7 +582,9 @@ Now converting that into a recursive function
     });
 
 
-## Section 10: Modules In Javacript
+## Section 10: Modules In Javascript
+##### General Intro: 
+  Modules divide programs into clusters of code that, by some criterion belong together. 
     1. There is module scope which lies between global scope and function scope. 
     2. We can combine multiple function scope in Module Scope but still not pollute the global scope
     3. Module Pattern code eg
