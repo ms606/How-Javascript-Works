@@ -2,7 +2,7 @@
 
 Section 1 --------------------------------- Basic Knowledge <br />
 Section 2 --------------------------------- About Javascript Engine <br />
-Section 3 --------------------------------- Context <br />
+Section 3 --------------------------------- Fundaments II ( Context / IIFE ) <br />
 Section 4 --------------------------------- Types <br />
 Section 5 --------------------------------- The 2 Pillars: Closure and Prototypal Inheritance <br />
 Section 6 --------------------------------- Object Oriented Programming <br />
@@ -135,7 +135,7 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
  There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
 
 ###### 2. Global Context 
-  In js global context refers to the outermost context in execution stack. 
+  In js global context refers to the outermost context in the execution stack. 
   ``` javascript
     var outerVariable = 'I am in the outer scope';
     
@@ -149,7 +149,23 @@ Js is a functional scope language. e.g if you use functional scoping var, variab
 
   ```
 
- 
+###### 3. IIFE
+``` javascript
+      (function () {
+      function square ( x ) { return x * x ; }
+      var hundred = 100;
+      console.log ( square(hundred) ) ;
+      })();
+```
+  IIFE, Immediately Invoked Function Expression.
+  How IIFE helps us in writing a clean code.
+  1. Encapsulation: It helps encapsulate code within a block, preventing the global scope (Avoiding global pollution). 
+  2. Local Scope: The function inside will be only accessible there and not outside, this will help eliminate the naming conflicts and unintended variable exposure.
+  3. Isolation: This isolates the function and any other variable or other app behavior doesn't affect it or anything else in the code base.
+  4. One-time execution: It is useful for situations where you want to execute a code block once.
+  5. Closure: It creates a closure, as the inner function (square) has access of the outer variable even if the function is executed. 
+
+
 ## Section 4: Types in Javascript
     ` 1. Statically typed language: Declare the variables before using them. (usually prevent bugs and usually helps in error handling)
             e.g. int a;
@@ -325,7 +341,7 @@ Or we can use the Object.create()
 
 
 #### Factory functions: 
-Functions that creates an objects for us. 
+Functions that create an object for us. 
 
 ### OOP2: 
 
@@ -560,7 +576,7 @@ Now converting that into a recursive function
           // console.log(response.text())
           return response.text();
         } else {
-          throw new Error("Error in api: no data found");
+          throw new Error("Error in API: no data found");
         }
       })
       .then((result) => {
