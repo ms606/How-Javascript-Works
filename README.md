@@ -28,7 +28,6 @@ It organizes these tokens into a structure that shows the relationships between 
 function sum(a, b) {
   return a + b;
 }
-
 ```
 In the first step, the parser would break this down into tokens such as ```function```, ```sum```, ```(```, ```a```, ```,```, ```b```, ```)```, ```{```, ```return```, ```a```, ```+```, ```b```, ```;```, and ```}```.
 
