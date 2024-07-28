@@ -2,7 +2,6 @@
 # How-Javascript-Works
 
 
-
 Section 1 --------------------------------- Basic Knowledge <br />
 Section 2 --------------------------------- About Javascript Engine <br />
 Section 3 --------------------------------- Fundaments II ( Context / IIFE ) <br />
