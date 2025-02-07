@@ -1,8 +1,5 @@
 
 
-
-
-
 # How-Javascript-Works
 
 
